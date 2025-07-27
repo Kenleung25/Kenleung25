@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question {{ question_index + 1 }}</title>
+</head>
+<body>
+    <h1>{{ question.question }}</h1>
+    <form method="POST">
+        {% for option in question.options %}
+            <label>
+                <input type="radio" name="answer" value="{{ option }}" required>
+                {{ option }}
+            </label><br>
+        {% endfor %}
+        
+        <div>
+            {% if question_index > 0 %}
+                <a href="{{ url_for('quiz', question_index=question_index - 1) }}">Previous</a>
+            {% endif %}
+            {% if question_index < total - 1 %}
+                <button type="submit">Next</button>
+            {% else %}
+                <button type="submit">Finish Quiz</button>
+            {% endif %}
+        </div>
+    </form>
+</body>
+</html>

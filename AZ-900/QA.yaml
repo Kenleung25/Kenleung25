@@ -1,0 +1,24 @@
+questions:
+  - question: "What does CPU stand for?"
+    options:
+      - "Central Processing Unit"
+      - "Central Process Unit"
+      - "Computer Personal Unit"
+      - "Control Processing Unit"
+    answer: "Central Processing Unit"
+  
+  - question: "What is the main function of the Operating System?"
+    options:
+      - "Manage hardware resources"
+      - "Run applications"
+      - "Provide user interface"
+      - "All of the above"
+    answer: "All of the above"
+    
+  - question: "What does RAM stand for?"
+    options:
+      - "Random Access Memory"
+      - "Read Access Memory"
+      - "Rapid Access Memory"
+      - "Real-time Access Memory"
+    answer: "Random Access Memory"
